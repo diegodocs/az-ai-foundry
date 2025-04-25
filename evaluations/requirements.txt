@@ -1,0 +1,8 @@
+load_dotenv
+azure.core
+azure.identity
+aiohttp
+loguru
+azure-ai-projects
+azure-ai-evaluation
+azure-ai-ml
