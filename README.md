@@ -12,8 +12,7 @@
 - GitHub(Repos, Actions)
 - Python >= 3.13
 
-
-## 🛠️ 3rd party dependencies
+## 🛠️ Libs and dependencies
 
 - azure-ai-projects
 - azure-ai-evaluation
@@ -25,19 +24,21 @@
 - add new features or improvements
 - send your pull request
 
-
 ## ▶️ How to run locally
 
-1. Clone this repo: git clone https://github.com/diegodocs/az-ai-foundry.git
-1. rename file .env.template to .env and update all variable values based on your azure infra (steps below)
-1. open your terminal and run: python evaluation_cloud.py
+1. Clone this repo:
+   - git clone https://github.com/diegodocs/az-ai-foundry.git
+1. setup .env:
+   - rename file .env.template to .env
+   - update all variable values based on your azure infra (steps below)
+1. run via terminal:
+   - python evaluation_cloud.py
 
 ## Create your Azure Infra
 
 ### Defining variables
 
 ```powershell
-
 # Naming conventions
 $resourceAcronymRg = "rg"
 $resourceAcronymSa = "sa"
@@ -61,7 +62,6 @@ $modelDeployName = "gpt4-o-deployment-002"
 $saResourceId = "/subscriptions/${subscriptionId}/resourceGroups/${rgName}/providers/Microsoft.Storage/storageAccounts/${saName}"
 $kvResourceId = "/subscriptions/${subscriptionId}/resourceGroups/${rgName}/providers/Microsoft.KeyVault/vaults/${kvName}"
 $hubResourceId = "/subscriptions/${subscriptionId}/resourceGroups/${rgName}/providers/Microsoft.MachineLearningServices/workspaces/$hubName"
-
 ```
 
 ### Create a resource group
